@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    color:white;
+    background-color: #c1c1c1;
+}
+p{
+    font-size: 1rem;
+}
+h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.Container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.Box {
+    width: 500px;
+    padding: 1rem;
+    margin: 3rem;
+    border-radius: 5px;
+    background-color: #1e1e1e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.TableBox {
+    border-radius: 5px;
+    margin: 3rem;
+    padding: 1rem;
+    background-color: #1e1e1e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
