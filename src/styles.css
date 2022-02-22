@@ -8,7 +8,6 @@ p{
 }
 h1 {
     font-size: 2rem;
-    font-weight: bold;
 }
 
 .Container{
@@ -16,6 +15,12 @@ h1 {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+}
+
+.Content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .Box {
@@ -33,10 +38,8 @@ h1 {
 .TableBox {
     border-radius: 5px;
     margin: 3rem;
-    padding: 1rem;
     background-color: #1e1e1e;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-

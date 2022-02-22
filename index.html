@@ -11,14 +11,18 @@
 </head>
 <body>
     <div class="Container">
-        <div class="Box">
-            <h1>Comparador de dados</h1>
-            <input type="file" id="dataCompare">
+        <h1>Comparador de dados</h1>
+        <div class="Content">
+            <div class="Box">
+                <h1>Primeira Tabela</h1>
+                <input type="file" id="dataCompare">
+            </div>
+            <div class="Box">
+                <h1>Segunda Tabela</h1>
+                <input type="file" id="dataEqual">
+            </div>
         </div>
-        <div class="Box">
-            <h1>Comparador de dados</h1>
-            <input type="file" id="dataEqual">
-        </div>
+        
         <div class="Box">
             <h1>Procurar Cidade</h1>
             <input type="text" id="search" placeholder="CD - Cidade">   
@@ -27,7 +31,7 @@
             <table id="tbl-data"></table>
         </div>
         <div class="TableBox">
-            <table id="tbl-comapre"></table>
+            <table id="tbl-compare"></table>
         </div>
     </div>
 
@@ -57,12 +61,12 @@
                 var i = 0;
                 data.map((row, index)=> {
                     if(i==0) {
-                        let table = document.getElementById('tbl-comapre');
+                        let table = document.getElementById('tbl-compare');
                         generateTableHead(table, row);
                     }
 
                     if(i>0) {
-                        let table = document.getElementById('tbl-comapre')
+                        let table = document.getElementById('tbl-compare')
                         generateTableRows(table, row)
                     }
                 });
@@ -87,6 +91,11 @@
                 let newText = document.createTextNode(row);
                 newCell.appendChild(newText);
             })
+        }
+
+        var procurando = document.getElementById('search')
+        function procura() {
+            
         }
 
     </script>
